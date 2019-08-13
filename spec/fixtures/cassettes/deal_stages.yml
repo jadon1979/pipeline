@@ -19,7 +19,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Thu, 15 Aug 2019 16:38:27 GMT
+      - Thu, 15 Aug 2019 17:25:38 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
@@ -27,8 +27,8 @@ http_interactions:
       Connection:
       - keep-alive
       Set-Cookie:
-      - __cfduid=dab447feb9db44e05778ac1dd86363ca51565887107; expires=Fri, 14-Aug-20
-        16:38:27 GMT; path=/; domain=.pipelinedeals.com; HttpOnly
+      - __cfduid=d216f454450826e2cb06adff4f7addf001565889938; expires=Fri, 14-Aug-20
+        17:25:38 GMT; path=/; domain=.pipelinedeals.com; HttpOnly
       Cache-Control:
       - max-age=0, private, must-revalidate
       Etag:
@@ -49,11 +49,11 @@ http_interactions:
       X-Ratelimit-Remaining:
       - '10'
       X-Ratelimit-Reset:
-      - '1565887108'
+      - '1565889939'
       X-Request-Id:
-      - 85fad3e4-2e99-4fd0-aa52-b22e827dce18
+      - 9b2dd4e8-a5c5-437f-a0ae-2e21fc9db762
       X-Runtime:
-      - '0.084674'
+      - '0.080296'
       X-Xss-Protection:
       - 1; mode=block
       Accept-Ranges:
@@ -63,7 +63,7 @@ http_interactions:
       Server:
       - cloudflare
       Cf-Ray:
-      - 506c9954189d9b97-DFW
+      - 506cde73a823c7e2-DFW
     body:
       encoding: ASCII-8BIT
       string: '{"entries":[{"id":727375,"percent":0,"name":"Lost","created_at":"2016/04/11
@@ -74,5 +74,5 @@ http_interactions:
         12:59:21 -0400","updated_at":"2017/07/24 09:03:01 -0400","deal_pipeline_id":201025},{"id":727387,"percent":75,"name":"Negotiation","created_at":"2016/04/11
         12:59:21 -0400","updated_at":"2017/07/24 09:02:49 -0400","deal_pipeline_id":201025}],"pagination":{"page":1,"page_var":"page","per_page":5,"pages":2,"total":6}}'
     http_version: 
-  recorded_at: Thu, 15 Aug 2019 16:38:27 GMT
+  recorded_at: Thu, 15 Aug 2019 17:25:38 GMT
 recorded_with: VCR 5.0.0

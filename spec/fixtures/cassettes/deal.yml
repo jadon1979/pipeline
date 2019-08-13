@@ -19,7 +19,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Thu, 15 Aug 2019 16:29:12 GMT
+      - Thu, 15 Aug 2019 17:25:39 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
@@ -27,8 +27,8 @@ http_interactions:
       Connection:
       - keep-alive
       Set-Cookie:
-      - __cfduid=d8adc7cb1ab32eac6011dec8ef41979931565886552; expires=Fri, 14-Aug-20
-        16:29:12 GMT; path=/; domain=.pipelinedeals.com; HttpOnly
+      - __cfduid=dfe089e273ce7037bfa5dac18b2ce48281565889939; expires=Fri, 14-Aug-20
+        17:25:39 GMT; path=/; domain=.pipelinedeals.com; HttpOnly
       Cache-Control:
       - max-age=0, private, must-revalidate
       Etag:
@@ -47,13 +47,13 @@ http_interactions:
       X-Ratelimit-Limit:
       - '10'
       X-Ratelimit-Remaining:
-      - '10'
+      - '7'
       X-Ratelimit-Reset:
-      - '1565886553'
+      - '1565889940'
       X-Request-Id:
-      - dba94a1b-4b71-4dd6-b5b1-eef615a72779
+      - 592ecaf9-b44d-46e3-9e5f-446f8b94a920
       X-Runtime:
-      - '0.122872'
+      - '0.107179'
       X-Xss-Protection:
       - 1; mode=block
       Accept-Ranges:
@@ -63,7 +63,7 @@ http_interactions:
       Server:
       - cloudflare
       Cf-Ray:
-      - 506c8bc95c95e043-DFW
+      - 506cde79da60260f-DFW
     body:
       encoding: ASCII-8BIT
       string: '{"id":12807214,"name":"King-Cremin","summary":null,"user_id":220090,"created_at":"2016/04/11
@@ -71,5 +71,5 @@ http_interactions:
         Dollar","code":"USD","symbol":"$"},"deal_pipeline":{"id":201025,"name":"Sales
         Pipeline","default":true},"deal_loss_reason":null,"primary_contact":null,"company":null,"revenue_type":null,"deal_copy":null,"collaborators":[],"custom_fields":{"custom_label_1279429":null,"custom_label_1279432":"22024.0"},"possible_notify_user_ids":[]}'
     http_version: 
-  recorded_at: Thu, 15 Aug 2019 16:29:12 GMT
+  recorded_at: Thu, 15 Aug 2019 17:25:39 GMT
 recorded_with: VCR 5.0.0

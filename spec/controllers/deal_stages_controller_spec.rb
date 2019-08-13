@@ -1,7 +1,6 @@
 require 'rails_helper'
 
 RSpec.describe DealStagesController, type: :controller, vcr: { record: :new_episodes } do
-
   describe 'GET index' do 
     let (:response) do
        VCR.use_cassette('deal_stages') { get :index, params: { page: 1, per_page: 5 } }
