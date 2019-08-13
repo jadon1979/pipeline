@@ -1,0 +1,75 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.pipelinedeals.com/api/v3/deals/12807214.json?api_key=G5mZccexXgchNkAYOBlQ
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 15 Aug 2019 16:29:12 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '528'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d8adc7cb1ab32eac6011dec8ef41979931565886552; expires=Fri, 14-Aug-20
+        16:29:12 GMT; path=/; domain=.pipelinedeals.com; HttpOnly
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"997db128fd87e338d58129b3025611ed"
+      Vary:
+      - Accept-Encoding
+      - Origin
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - DENY
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Ratelimit-Limit:
+      - '10'
+      X-Ratelimit-Remaining:
+      - '10'
+      X-Ratelimit-Reset:
+      - '1565886553'
+      X-Request-Id:
+      - dba94a1b-4b71-4dd6-b5b1-eef615a72779
+      X-Runtime:
+      - '0.122872'
+      X-Xss-Protection:
+      - 1; mode=block
+      Accept-Ranges:
+      - bytes
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 506c8bc95c95e043-DFW
+    body:
+      encoding: ASCII-8BIT
+      string: '{"id":12807214,"name":"King-Cremin","summary":null,"user_id":220090,"created_at":"2016/04/11
+        13:46:00 -0400","updated_at":"2016/04/11 13:46:00 -0400","is_archived":false,"is_example":null,"source_id":null,"primary_contact_id":null,"deal_stage_id":727384,"probability":50,"status":null,"expected_close_date":null,"closed_time":null,"expected_close_date_event_id":null,"company_id":null,"import_id":null,"value":"44049.04","deal_loss_reason_id":null,"deal_loss_reason_notes":null,"is_sample":false,"revenue_type_id":null,"deal_pipeline_id":201025,"person_ids":[],"shared_user_ids":[],"value_in_cents":4404904,"user":{"id":220090,"first_name":"Glengarry","last_name":"Ross"},"deal_stage":{"id":727384,"percent":50,"name":"Presentation"},"people":[],"currency":{"id":1,"name":"American
+        Dollar","code":"USD","symbol":"$"},"deal_pipeline":{"id":201025,"name":"Sales
+        Pipeline","default":true},"deal_loss_reason":null,"primary_contact":null,"company":null,"revenue_type":null,"deal_copy":null,"collaborators":[],"custom_fields":{"custom_label_1279429":null,"custom_label_1279432":"22024.0"},"possible_notify_user_ids":[]}'
+    http_version: 
+  recorded_at: Thu, 15 Aug 2019 16:29:12 GMT
+recorded_with: VCR 5.0.0

@@ -9,7 +9,11 @@ threads threads_count, threads_count
 
 # Specifies the `port` that Puma will listen on to receive requests; default is 3000.
 #
-port        ENV.fetch("PORT") { 3000 }
+
+# Given that this container holds 2 separate apps 
+# we are running the api on port 3001 which will be 
+# proxied via the react app.  
+port        ENV.fetch("PORT") { 3001 }
 
 # Specifies the `environment` that Puma will run in.
 #
