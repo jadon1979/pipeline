@@ -3,6 +3,8 @@ data
 .env
 ._*
 
+node_modules/*
+
 # Ignore bundler config.
 /.bundle
 

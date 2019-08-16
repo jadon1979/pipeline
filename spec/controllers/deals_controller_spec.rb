@@ -18,6 +18,10 @@ RSpec.describe DealsController, type: :controller, vcr: { record: :new_episodes 
       expect(body.deals.size).to eq 5
     end
     
+    it 'should include deal_stages' do 
+      expect(body.deals.first.deal.deal_stage).to be_truthy
+    end 
+    
     it 'should respond with pagination' do 
       expect(pagination.per_page).to eq 5
     end 

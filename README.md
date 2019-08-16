@@ -45,7 +45,17 @@ The `d` option daemonizes the `run` process so it can run in the background.
 
 ```bash
 $ docker-compose exec pipeline bash
+$ bundle 
+$ npm --prefix=/opt/apps/pipeline/web install 
+$ puma -C './config/puma.rb'
+$ npm start --prefix web
 ```
+### 5. Links 
+
+Query parameters mimic the Pipeline API directly
+
+[API](http://localhost)
+[Frontend](http://localhost:3000)
 
 ## Useful Docker commands
 

@@ -18,7 +18,7 @@ RUN apt-get install -y git-core zlib1g-dev build-essential libssl-dev libreadlin
   mkdir -p /opt/apps/pipeline && \
   gem install bundler && \
   echo 'gem: --no-document' >> ~/.gemrc
-  
+
 RUN groupadd -g 1000 deploy && \
   useradd deploy -m -u 1000 -s /bin/bash -c "Deploy" -g 1000 -G www-data,sudo
 
