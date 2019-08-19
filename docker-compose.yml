@@ -1,0 +1,30 @@
+version: '3.5'
+services:
+  pipeline:
+    image: pipeline/apps:latest
+    build: .
+    tty: true
+    ports:
+      - 443:443
+      - 80:80
+      - 3000:3000
+    links:
+      - pipelinesql
+    environment:
+      PIPELINE_API_KEY: ${PIPELINE_API_KEY}
+    volumes:
+      - .:/opt/apps/pipeline
+      - ${DEPLOY_SSHKEY_NAME}:/home/deploy/.ssh/id_rsa:ro
+      - ${DEPLOY_SSHKEY_NAME}.pub:/home/deploy/.ssh/id_rsa.pub:ro
+      - ${DEPLOY_SSH_CONFIG}:/home/deploy/.ssh/config
+  pipelinesql:
+    image: mysql:8.0
+    hostname: pipelinesql
+    domainname: pipelinesql
+    environment:
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+    volumes:
+      - ./data/8.0/:/var/lib/mysql
+    ports:
+      - 3308:3306
